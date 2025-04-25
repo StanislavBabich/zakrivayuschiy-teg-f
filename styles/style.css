@@ -141,24 +141,6 @@
   appearance: none;
 }
 
-.card__icon-button {
-  display: grid;
-  border: 2px solid transparent;
-  padding: 0;
-  background: transparent;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-  appearance: none;
-}
-
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-  border-color: var(--text-color);
-}
-
 .button:focus {
   outline: none;
 }
