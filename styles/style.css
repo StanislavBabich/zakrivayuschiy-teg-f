@@ -325,3 +325,11 @@
     block-size: 38px;
   }
 }
+
+@supports ((-webkit-text-stroke: 1px var(--bg-color)) or (text-stroke: 1px var(--bg-color))) {
+  .card__img-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--bg-color);
+    text-stroke: 1px var(--bg-color);
+  }
+}
