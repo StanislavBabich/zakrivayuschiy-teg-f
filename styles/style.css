@@ -1,16 +1,327 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
+  margin-block-start: 101px;
+  font-family: var(--page-main-font-family);
+  font-variation-settings: "wght" var(--page-main-font-weight);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-image: var(--page-bg-image, none);
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+}
+
+.header {
+  padding-block-end: 120px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: var(--page-accent-font-family);
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: var(--bg-color);
+  border: var(--border);
+  margin-block-end: 100px;
+  min-inline-size: 371px;
+  max-inline-size: 696px;
+}
+
+.title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block-start: 120px;
+  margin-block-end: 20px;
+}
+
+.subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  margin-block-end: 52px;
+}
+
+.card__list {
+  display: grid;
+  gap: 52px;
+}
+
+.card {
+  margin-inline: auto;
+  border: var(--border);
+  background: var(--bg-color);
+  min-inline-size: 371px;
+  max-inline-size: 696px;
+}
+
+.card__title {
+  border-bottom: var(--border);
+  padding: 5px 10px 4px 10px;
+}
+
+.header__card-title {
+  font-size: 18px;
+  line-height: normal;
+  font-variation-settings: "wght" var(--headings-font-weight);
+}
+
+.card__wrapper {
+  position: relative;
+}
+
+.card__image-label {
+  position: absolute;
+  z-index: 1;
+  font-family: var(--page-accent-font-family);
+  color: var(--text-color);
+  font-size: 14px;
+  inset-inline-end: 10px;
+  inset-block-start: 23px;
+  text-shadow: 0 0 2px var(--shadow-text-color);
+}
+
+.card__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+}
+
+.content {
+  display: grid;
+  gap: 27px;
+  padding: 25px 26px 25px 25px;
+  font-size: 18px;
+  line-height: 21px;
+  border-block-start: 2px solid;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: end;
+  align-items: stretch;
+  gap: 4px;
+  padding: 0 25px 23px 25px;
+}
+
+.card__icon-button {
+  display: grid;
+  border: 2px solid transparent;
+  padding: 0;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--text-color);
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--text-color);
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--page-accent-font-family);
+  font-size: 14px;
+  text-transform: inherit;
+  background: var(--bg-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.card__icon-button {
+  display: grid;
+  border: 2px solid transparent;
+  padding: 0;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--text-color);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--text-color);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--text-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button--save {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+}
+
+.button__text,
+.button__icon {
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+
+.button__icon {
+  block-size: 28px;
+  inline-size: 28px;
+}
+
+.like-icon {
+  block-size: 36px;
+  inline-size: 39px;
+}
+
+.footer__button {
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+  min-height: 78px;
+  min-width: 306px;
+  background-color: #ffffff;
+  margin-block-end: 102px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  border: var(--border);
+  padding: 25px 42px 37px 42px;
+  color: var(--text-color);
+  font-family: var(--page-accent-font-family);
+  line-height: 1.5;
+  text-transform: uppercase;
+  background: var(--bg-color);
+  max-inline-size: 341px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.modal__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 30px;
+}
+
+.modal__button {
+  inline-size: 257px;
+  block-size: 38px;
+}
+
+.filter-grayscale {
+  filter: grayscale(70%);
+}
+
+.filter-saturate {
+  filter: saturate(280%);
+}
+
+.filter-multiple {
+  filter: contrast(100%) hue-rotate(30deg) saturate(100%);
+}
+
+.filter-invert {
+  filter: invert(80%);
+}
+
+.filter-sepia {
+  filter: sepia(90%);
+}
+
+.filter-blur {
+  filter: blur(10px);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg) blur(1.5px) contrast(65%);
+}
+
+@media (width >=1439px) {
+  .header {
+    padding: 8px 120px 128px 120px;
+  }
+
+  .content {
+    padding: 30px 25px 25px 25px;
+  }
+
+  .card__list {
+    gap: 51px;
+  }
+
+  .card__image-label {
+    inset-inline-end: 22px;
+    inset-block-start: 26px;
+  }
+
+  .footer__button {
+    flex-direction: row;
+    min-width: 335px;
+    min-height: 30px;
+  }
+
+  .button__icon {
+    block-size: 21px;
+    inline-size: 21px;
+  }
+
+  .modal {
+    padding-left: 30px;
+    max-inline-size: 357px;
+  }
+
+  .modal__button {
+    inline-size: 293px;
+    block-size: 38px;
+  }
 }
