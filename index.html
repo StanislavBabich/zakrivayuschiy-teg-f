@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Закрывающий тег</title>
-    <link rel="shortcut icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="shortcut icon" href="./svg/favicon.svg" type="image/svg+xml"/>
+    <link rel="apple-touch-icon" href="./images/favicon.png"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" href="./styles/variables.css"/>
+    <link rel="stylesheet" href="./styles/globals.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/animations.css"/>
   </head>
   <body class="page">
-    <header>
-    <div class="header">
+    <header class="header">
       <span class="title">&lt;/HTML&gt;</span>
       <h1 class="subtitle">закрывающий тег</h1>
-    </div>
     </header>
     <main class="main">
       <ul class="card__list">
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-            </div>
+            <h2 class="header__card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;/HTML&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;/HTML&gt;</span>
               <img
+                loading="lazy"
                 class="card__image"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
             </div>
             <div class="content">
               <p>
-                Это было самое начало пути.
-                На этом этапе важно было проникнуться основами и настроиться на учёбу.
-                И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
               </p>
               <p>Место для ваших воспоминаний о начале обучения.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -69,9 +65,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -79,30 +73,28 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">1 спринт: Я — чистый лист</h2>
-            </div>
+            <h2 class="header__card-title">1 спринт: Я — чистый лист</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;/HTML&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;/HTML&gt;</span>
               <img
+                loading="lazy"
                 class="card__image filter-grayscale"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
             </div>
             <div class="content">
               <p>
-                На первых этапах мы работали со страхами и сомнениями,
-                которые часто испытывают новички. Один из них — страх перед чистым листом.
-                Это, конечно же, намного сложнее, чем боязнь куска бумаги.
-                Часто за этим ощущением скрываются более глубокие вопросы: с чего начать?
-                а вдруг будет слишком сложно? что, если я не справлюсь?
+                На первых этапах мы работали со страхами и сомнениями, которые
+                часто испытывают новички. Один из них — страх перед чистым
+                листом. Это, конечно же, намного сложнее, чем боязнь куска
+                бумаги. Часто за этим ощущением скрываются более глубокие
+                вопросы: с чего начать? а вдруг будет слишком сложно? что, если
+                я не справлюсь?
               </p>
               <p>Место для ваших воспоминаний о начале первого спринта.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -128,9 +120,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -138,12 +128,11 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">1 спринт: А если не получится?</h2>
-            </div>
+            <h2 class="header__card-title">1 спринт: А если не получится?</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;CSS&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;CSS&gt;</span>
               <img
+                loading="lazy"
                 class="card__image filter-saturate"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
@@ -157,9 +146,7 @@
               <p>Место для ваших воспоминаний об окончании первого спринта.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -185,9 +172,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -195,12 +180,11 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">2 спринт: Погоня за идеалом</h2>
-            </div>
+            <h2 class="header__card-title">2 спринт: Погоня за идеалом</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;desigions&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;desigions&gt;</span>
               <img
+                loading="lazy"
                 class="card__image filter-multiple"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
@@ -208,16 +192,15 @@
             <div class="content">
               <p>
                 На этом этапе вы уже достаточно разбирались в основах вёрстки,
-                чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять,
-                что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально,
-                старались просто сделать.
+                чтобы понять, как много ещё впереди. Вы могли попытаться
+                погнаться за идеалом и понять, что он недостижим. А, может, вы
+                вовсе и не подвержены перфекционизму и вместо того, чтобы
+                сделать идеально, старались просто сделать.
               </p>
               <p>Место для ваших воспоминаний о начале второго спринта.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -243,9 +226,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -253,30 +234,28 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">2 спринт: О тех, кто рядом</h2>
-            </div>
+            <h2 class="header__card-title">2 спринт: О тех, кто рядом</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">care</span>
+              <span class="card__image-label" aria-hidden="true">care</span>
               <img
+                loading="lazy"
                 class="card__image filter-invert"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
             </div>
             <div class="content">
               <p>
-                Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали,
-                что одни против целого мира). Вас окружали одногруппники,
-                команда сопровождения и просто близкие люди, которым можно пожаловаться,
-                если очередной макет просто так не поддавался. Осваивать что-то новое легче,
-                когда рядом есть единомышленники, не правда ли?
+                Всё это время вы были не одиноки (хотя, возможно, иногда и
+                чувствовали, что одни против целого мира). Вас окружали
+                одногруппники, команда сопровождения и просто близкие люди,
+                которым можно пожаловаться, если очередной макет просто так не
+                поддавался. Осваивать что-то новое легче, когда рядом есть
+                единомышленники, не правда ли?
               </p>
               <p>Место для ваших воспоминаний об окончании второго спринта.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -302,9 +281,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -312,28 +289,25 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">3 спринт: Обходные стратегии</h2>
-            </div>
+            <h2 class="header__card-title">3 спринт: Обходные стратегии</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;support&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;support&gt;</span>
               <img
+                loading="lazy"
                 class="card__image filter-sepia"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
             </div>
             <div class="content">
               <p>
-                На этом курсе вы постоянно решали разные задачи.
-                В какой-то момент вам могло показаться, что решения просто иссякли.
-                Значит, пришло время посмотреть на задачу под другим углом.
+                На этом курсе вы постоянно решали разные задачи. В какой-то
+                момент вам могло показаться, что решения просто иссякли. Значит,
+                пришло время посмотреть на задачу под другим углом.
               </p>
               <p>Место для ваших воспоминаний о начале третьего спринта.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -359,9 +333,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -369,29 +341,27 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">3 спринт: Когда опускаются руки</h2>
-            </div>
+            <h2 class="header__card-title">3 спринт: Когда опускаются руки</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;lifes-style: none;&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;lifes-style: none;&gt;</span>
               <img
+                loading="lazy"
                 class="card__image filter-blur"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
             </div>
             <div class="content">
               <p>
-                Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься.
-                Вроде и проектную пора сдавать, и задачи хочется порешать,
-                и в теории получше разобраться, и жизнь не забыть пожить.
-                В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
+                Во время учёбы часто возникает чувство, когда не знаешь, за что
+                хвататься. Вроде и проектную пора сдавать, и задачи хочется
+                порешать, и в теории получше разобраться, и жизнь не забыть
+                пожить. В такие моменты очень нужна концентрация. Вспомните,
+                откуда вы её черпали.
               </p>
               <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -417,9 +387,7 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
@@ -427,30 +395,31 @@
         </li>
         <li>
           <article class="card">
-            <div class="card__title">
-              <h2 class="header__card-title">«Сейчас я здесь»</h2>
-            </div>
+            <h2 class="header__card-title">«Сейчас я здесь»</h2>
             <div class="card__wrapper">
-              <span class="card__image-label">&lt;experience&gt;</span>
+              <span class="card__image-label" aria-hidden="true">&lt;experience&gt;</span>
               <img
+                loading="lazy"
                 class="card__image filter-hue-rotate"
                 src="images/image.png"
                 alt="Фургон едет по дороге на фоне гор"/>
             </div>
             <div class="content">
               <p>
-                Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых,
-                впереди ещё много материала про «красотищу». Во-вторых,
-                с окончанием курса учёба не заканчивается. Вёрстка — это целый мир.
-                И этот мир постоянно меняется. Познать его полностью не получится,
-                но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
+                Сейчас вы уже очень много знаете о вёрстке. Но это только
+                начало. Во-первых, впереди ещё много материала про «красотищу».
+                Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка —
+                это целый мир. И этот мир постоянно меняется. Познать его
+                полностью не получится, но это тот случай, когда важен сам
+                процесс познания. Ведь часто путь — и есть результат.
               </p>
-              <p>Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
+              <p>
+                Место, чтобы остановиться, подумать и написать, что вы
+                чувствуете в этой точке пути.
+              </p>
             </div>
             <div class="card__buttons">
-              <button
-                type="button"
-                class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 39 36"
@@ -476,30 +445,28 @@
                     fill="var(--like-sparks-color)"/>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="button card__like-button">
+              <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
               </button>
             </div>
           </article>
         </li>
       </ul>
+      <button
+        type="button"
+        onclick="window.modal.showModal();"
+        aria-controls="modal"
+        class="footer__button button">
+        <svg class="button__icon" viewBox="0 0 39 39" aria-hidden="true">
+          <use href="./svg/save.svg#save-icon"/>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
-    <button
-      type="button"
-      onclick="window.modal.showModal();"
-      aria-controls="modal"
-      class="footer__button button button--save">
-      <svg class="button__icon" viewBox="0 0 29 28">
-        <use href="#floppy"/>
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
     <dialog class="modal" id="modal">
       <div class="modal__content">
-        <svg class="modal__icon" viewBox="0 0 29 28">
-          <use href="#floppy"/>
+        <svg class="modal__icon" viewBox="0 0 39 39" aria-hidden="true">
+          <use href="./svg/save.svg#save-icon"/>
         </svg>
         <p>Вставьте дискету, чтобы продолжить</p>
       </div>
@@ -510,11 +477,5 @@
       </form>
     </dialog>
     <script src="./scripts/like.js"></script>
-    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-      <symbol id="floppy">
-        <path fill="currentColor" d="M.5 0h2.15v2.15H.5zm0 2.15h2.15V4.3H.5zm0 2.16h2.15v2.15H.5zm0 2.15h2.15v2.15H.5zm0 2.16h2.15v2.15H.5zm0 2.15h2.15v2.15H.5zm0 2.15h2.15v2.15H.5zm0 2.16h2.15v2.15H.5zm0 2.15h2.15v2.15H.5zm0 2.15h2.15v2.15H.5zm0 2.16h2.15v2.15H.5zm0 2.15h2.15v2.15H.5zm0 2.16h2.15V28H.5zM24.2 0v2.15h-2.16V0zm-2.16 0v2.15h-2.15V0zm-2.16 0v2.15h-2.15V0zm-2.15 0v2.15h-2.15V0zm-2.15 0v2.15h-2.15V0zm-2.16 0v2.15h-2.15V0zm-2.15 0v2.15H9.12V0zM9.12 0v2.15H6.97V0zM6.96 0v2.15H4.81V0zM4.8 0v2.15H2.67V0zm21.55 2.16V4.3H24.2V2.16zM6.96 4.3v2.16H4.8V4.3zm0-2.15V4.3H4.81V2.15zm0 4.31v2.15H4.81V6.46zM22.04 4.3v2.16h-2.15V4.3zm0-2.15V4.3H19.9V2.15zm0 4.31v2.15H19.9V6.46zM17.73 4.3v2.16h-2.15V4.3zm0-2.15V4.3h-2.15V2.15zm0 4.31v2.15h-2.15V6.46zm4.3 2.16v2.15h-2.15V8.62zm-2.15-.01v2.15h-2.15V8.61zm-2.15 0v2.15h-2.15V8.61zm-2.16.01v2.15h-2.15V8.62zm-2.15-.01v2.15h-2.15V8.61zm-2.16.01v2.15H9.11V8.62zm-2.15 0v2.15H6.96V8.62zm-2.15-.01v2.15H4.8V8.61zm17.23 6.46v2.15h-2.15v-2.15zm-2.15.01v2.15h-2.15v-2.15zm-2.16-.01v2.15h-2.15v-2.15zm-2.15.01v2.15h-2.15v-2.15zm-2.16 0v2.15h-2.15v-2.15zm-2.15-.01v2.15h-2.15v-2.15zm-2.15.01v2.15H9.12v-2.15zm-2.16 0v2.15H6.96v-2.15zm-2.15 0v2.15H4.8v-2.15zm17.24 2.15v2.15h-2.16v-2.15zm-17.24 0v2.15H4.81v-2.15zm17.24 2.15v2.15h-2.15v-2.15zm-17.23 0v2.15H4.82v-2.15zm17.23 2.16v2.15h-2.16v-2.15zm-17.24 0v2.15H4.8v-2.15zm0 2.16v2.14H4.81V23.7zm17.24-.01v2.15h-2.15v-2.15zm2.14 2.16V28H24.2v-2.15zm-2.15-.01V28h-2.15v-2.15zm-2.16.01V28h-2.15v-2.15zm-2.15-.01V28h-2.15v-2.15zm-2.15.01V28h-2.15v-2.15zm-2.16 0V28h-2.15v-2.15zm-2.15-.01V28h-2.15v-2.15zm-2.15.01V28H9.12v-2.15zm-2.16 0V28H6.96v-2.15zm-2.15-.01V28H4.8v-2.15zm-2.16.01V28H2.65v-2.15zM28.5 28h-2.15v-2.15h2.15zm0-2.16h-2.15V23.7h2.15zm0-2.14h-2.15v-2.16h2.15zm0-2.16h-2.15v-2.15h2.15zm0-2.15h-2.15v-2.15h2.15zm0-2.16h-2.15v-2.15h2.15zm0-2.16h-2.15v-2.15h2.15z"/>
-        <path fill="currentColor" d="M28.5 12.93h-2.15v-2.15h2.15zm0-2.16h-2.15V8.62h2.15zm0-2.16h-2.15V6.46h2.15zm0-2.15h-2.15V4.31h2.15z"/>
-      </symbol>
-    </svg>
   </body>
 </html>
