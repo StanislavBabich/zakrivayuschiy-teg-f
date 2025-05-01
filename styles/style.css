@@ -12,7 +12,8 @@
 }
 
 .header {
-  padding-block-end: 120px;
+  padding-top: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  padding-bottom: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -29,7 +30,6 @@
 
 .title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  margin-block-start: 120px;
   margin-block-end: 20px;
 }
 
@@ -40,12 +40,13 @@
 .main {
   display: grid;
   justify-items: center;
-  margin-block-end: 52px;
+  margin-block-end: 100px;
 }
 
 .card__list {
   display: grid;
   gap: 52px;
+  margin-block-end: 52px;
 }
 
 .card {
@@ -74,8 +75,8 @@
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   color: var(--text-color, #000000);
   font-size: 14px;
-  inset-inline-end: 12px;
-  inset-block-start: 22px;
+  inset-inline-end: clamp(0.813rem, 1.035vw + 0.569rem, 1.5rem);
+  inset-block-start: clamp(1.5rem, 0.188vw + 1.456rem, 1.625rem);
   text-shadow: 0 0 2px var(--shadow-text-color, #ffffff);
 }
 
@@ -89,7 +90,9 @@
 .content {
   display: grid;
   gap: 27px;
-  padding: 22px 33px 25px 27px;
+  padding-top: clamp(1.375rem, 0.376vw + 1.287rem, 1.625rem);
+  padding-right: 28px;
+  padding-left: 27px;
   font-size: 18px;
   line-height: 21px;
   border-block-start: 2px solid;
@@ -100,7 +103,7 @@
   justify-content: end;
   align-items: stretch;
   gap: 5px;
-  padding: 0 27px 26px 25px;
+  padding: 24px 27px 27px 26px;
 }
 
 .card__icon-button {
@@ -187,11 +190,8 @@
   align-items: center;
   justify-items: center;
   gap: 8px;
-  min-height: 78px;
-  min-width: 306px;
+  min-inline-size: clamp(19.125rem, 2.728vw + 18.484rem, 20.938rem);
   background-color: #ffffff;
-  margin-block-start: 50px;
-  margin-block-end: 50px;
 }
 
 .visually-hidden-icon {
@@ -199,14 +199,13 @@
 }
 
 .modal {
-  outline: var(--outline, 2px solid #000000);
-  padding: 30px 40px 30px 40px;
+  padding: 30px;
   color: var(--text-color, #000000);
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   line-height: 1.5;
   text-transform: uppercase;
   background: var(--bg-color, #ffffff);
-  max-inline-size: 341px;
+  max-inline-size: clamp(21.313rem, 1.505vw + 20.959rem, 22.313rem);
   font-weight: 400;
   font-size: 14px;
 }
@@ -229,7 +228,7 @@
 }
 
 .modal__button {
-  min-inline-size: 257px;
+  min-inline-size: clamp(16.063rem, 3.387vw + 15.267rem, 18.313rem);
   min-block-size: 38px;
 }
 
@@ -262,42 +261,20 @@
 }
 
 @media (width >=1439px) {
-  .header {
-    padding: 8px 120px 128px 120px;
-  }
-
-  .content {
-    padding: 28px 25px 24px 25px;
-  }
-
-  .card__list {
-    gap: 51px;
-  }
-
-  .card__image-label {
-    inset-inline-end: 22px;
-    inset-block-start: 26px;
-  }
 
   .footer__button {
     flex-direction: row;
-    min-width: 335px;
-    min-height: 30px;
   }
 
   .button__icon {
     block-size: 21px;
     inline-size: 21px;
   }
+}
 
+@media (width <=376px) {
   .modal {
-    padding: 30px;
-    max-inline-size: 357px;
-  }
-
-  .modal__button {
-    min-inline-size: 293px;
-    min-block-size: 38px;
+    padding: 30px 40px 30px 40px;
   }
 }
 
